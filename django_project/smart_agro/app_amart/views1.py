@@ -37,7 +37,10 @@ from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping ,ReduceLROnPlateau , ModelCheckpoint
 from keras.applications.mobilenet import MobileNet ,preprocess_input
 tensorflow.compat.v1.logging.set_verbosity(tensorflow.compat.v1.logging.ERROR)
-optimizer=Adam(lr=0.001,beta_1=0.9,beta_2=0.99)
+
+optimizer=Adam(learning_rate=0.001,beta_1=0.9,beta_2=0.99)
+
+
 from keras_preprocessing.image import load_img , img_to_array
 import cv2
 import base64
